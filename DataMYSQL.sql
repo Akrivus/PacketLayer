@@ -117,5 +117,7 @@ CREATE TABLE Post (
 ID INT NOT NULL, FOREIGN KEY (ID) REFERENCES Sales(ID),
 Customer_pIP_range VARCHAR(255), Default_gate VARCHAR(255), Subnet VARCHAR(255),
 Engineering_post_checks VARCHAR(255), Operation_post_checks VARCHAR(255),
-Accounting_post_checks VARCHAR(255), Sales_post_checks VARCHAR(255),
+Accounting_post_checks VARCHAR(255), Sales_post_checks VARCHAR(255)
 );
+
+

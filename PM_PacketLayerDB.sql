@@ -275,17 +275,6 @@ CREATE TABLE `Sales` (
 
 -- --------------------------------------------------------
 
---
--- Table structure for table `team`
---
-
-CREATE TABLE `team` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `member` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `User`
@@ -353,12 +342,6 @@ ALTER TABLE `Sales`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indexes for table `team`
---
-ALTER TABLE `team`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `User`
 --
 ALTER TABLE `User`
@@ -373,12 +356,6 @@ ALTER TABLE `User`
 --
 ALTER TABLE `Sales`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
-
---
--- AUTO_INCREMENT for table `team`
---
-ALTER TABLE `team`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `User`

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+	<title>Plotting Form</title>
+</head>
+<body>
+	<form action="/php" name="plotting">
+		<fieldset id="general">
+			<h2>General Info</h2>
+			<label for="name">Customer Name:</label>
+			<input type="text" name="name">
+			<br />
+			<label for="address">Address:</label>
+			<input type="text" name="address">
+			<br />
+			<label for="salesperson">Salesperson:</label>
+			<input type="text" name="salesperson">
+			<br />
+			<label for="bandwithreq">Bandwith Requirements:</label>
+			<input type="text" name="bandwidthreq">
+		</fieldset>
+		<fieldset id="plotting">
+			<h2>Plotting</h2>
+			<label for="site">Can site be hit from existing infrastructure:</label>
+			<input type="checkbox" name="site">
+			<br />
+			<label for="distribution">Describe (possible) distribution sites:</label>
+			<textarea type="text" name="distribution" form="plotting">
+		</fieldset>
+		<fieldset id="surveys">
+			<label for="needssurvey">Needs onsite survey:</label>
+			<input type="checkbox" name="needssurvey">
+			<br />
+			<label for="needssurvey">Radio survey:</label>
+			<input type="checkbox" name="needssurvey">
+			<br />
+			<label for="needssurvey">Visual survey:</label>
+			<input type="checkbox" name="needssurvey">
+			<br />
+			<label for="needssurvey">People needed:</label>
+			<input type="input" name="needssurvey">
+		</fieldset>
+		<fieldset id="rf">
+			<h2>RF Info</h2>
+			<label for="coldcall">Cold Call:</label>
+			<input type="text" name="coldcall">
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<input type="text" name="coldcall">
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<input type="checkbox" name="coldcall">
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<input type="text" name="coldcall">
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<input type="text" name="coldcall">
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<textarea name="notes" form="plotting">
+			</textarea>
+			<br />
+			<label for="coldcall">Cold Call:</label>
+			<textarea name="notes" form="plotting">
+			</textarea>
+		</fieldset>
+		<fieldset id="estimated">
+			<h2>Reseller Person of Contact</h2>
+			<label for="name">Name:</label>
+			<input type="text" name="name">
+			<br />
+			<label for="organization">Organization:</label>
+			<input type="text" name="organization">
+		</fieldset>
+	</form>
+</body>

@@ -17,10 +17,10 @@ class DbOperation
     }
 
 
-	public function createSales($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20 ,$cl21 ,$cl22 ,$cl23 ,$cl24, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24)
+	public function createSales($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20 ,$cl21 ,$cl22 ,$cl23, $cl24, $cl25 ,$cl26 ,$cl27 ,$cl28 ,$cl29 ,$cl30, $cl31 ,$cl32, $cl33 ,$cl34 ,$cl35 ,$cl36 ,$cl37 ,$cl38 ,$cl39 ,$cl40 ,$cl41 ,$cl42 ,$cl43,  $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25 ,$vl26 ,$vl27 ,$vl28 ,$vl29 ,$vl30 ,$vl31,$vl32, $vl33 ,$vl34 ,$vl35 ,$vl36 ,$vl37 ,$vl38 ,$vl39 ,$vl40 ,$vl41 ,$vl42 ,$vl43)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Sales(".$cl1.",". $cl2.",".$cl3.",".$cl4.",".$cl5.",".$cl6.",".$cl7.",".$cl8.",".$cl9.",".$cl10.",".$cl11.",".$cl12.",".$cl13.",".$cl14.",".$cl15.",".$cl16.",".$cl17.",".$cl18.",".$cl19.",".$cl20.",".$cl21.",".$cl22.",".$cl23.",".$cl24." ) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("ssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24);
+        $stmt = $this->conn->prepare("INSERT INTO Sales(".$cl1.",". $cl2.",".$cl3.",".$cl4.",".$cl5.",".$cl6.",".$cl7.",".$cl8.",".$cl9.",".$cl10.",".$cl11.",".$cl12.",".$cl13.",".$cl14.",".$cl15.",".$cl16.",".$cl17.",".$cl18.",".$cl19.",".$cl20.",".$cl21.",".$cl22.",".$cl23.",".$cl24.",".$cl25 .",".$cl26 .",".$cl27 .",".$cl28 .",".$cl29 .",".$cl30 .",".$cl31.",".$cl32.",". $cl33 .",".$cl34 .",".$cl35 .",".$cl36 .",".$cl37 .",".$cl38 .",".$cl39 .",".$cl40 .",".$cl41 .",".$cl42 .",".$cl43.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("sssssssssssssssssssssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25 ,$vl26 ,$vl27 ,$vl28 ,$vl29 ,$vl30, $vl31,$vl32, $vl33 ,$vl34 ,$vl35 ,$vl36 ,$vl37 ,$vl38 ,$vl39 ,$vl40 ,$vl41 ,$vl42 ,$vl43);
         $result = $stmt->execute();
         $last_id = $this->conn->insert_id;
         $stmt->close();
@@ -35,12 +35,12 @@ class DbOperation
 	
 	public function createCPE($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20 ,$cl21 ,$cl22 ,$cl23 ,$cl24,$cl25,$cl26,$cl27, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25,$vl26,$vl27)
     {
-        $stmt = $this->conn->prepare("INSERT INTO CPE(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12 .",".$cl13 .",".$cl14 .",".$cl15 .",".$cl16 .",".$cl17 .",".$cl18 .",".$cl19 .",".$cl20 .",".$cl21 .",".$cl22 .",".$cl23 .",".$cl24.",".$cl25.",".$cl26.",".$cl27.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("issssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25,$vl26,$vl27);
+        $stmt = $this->conn->prepare("INSERT INTO CPE(".$cl1 .", ". $cl2 .", ".$cl3 .", ".$cl4 .", ".$cl5 .", ".$cl6 .", ".$cl7 .", ".$cl8 .", ".$cl9 .", ".$cl10 .", ".$cl11 .", ".$cl12 .", ".$cl13 .", ".$cl14 .", ".$cl15 .", ".$cl16 .", ".$cl17 .", ".$cl18 .", ".$cl19 .", ".$cl20 .", ".$cl21 .", ".$cl22 .", ".$cl23 .", ".$cl24.", ".$cl25.", ".$cl26.", ".$cl27.") values(?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)");
+		$stmt->bind_param("issssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25,$vl26,$vl27);
         $result = $stmt->execute();
-        $last_id = $this->conn->insert_id;
         $stmt->close();
         if ($result) {
+			echo "yep";
 			$sql = "SELECT * FROM CPE where ID = ".$vl1;
 			$result = $this->conn->query($sql);
 			return ['yes', $result ];        
@@ -112,11 +112,13 @@ class DbOperation
         }
     }
 	
-	public function createPlotting($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 )
+	public function createPlotting($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 , $cl13, $cl14, $cl15, $cl16, $cl17, $cl18, $cl19, $cl20, $cl21, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12, $vl13, $vl14, $vl15, $vl16, $vl17, $vl18, $vl19, $vl20, $vl21)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Plotting(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("isssssssssss",$vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12);
+		echo "2";
+        $stmt = $this->conn->prepare("INSERT INTO Plotting(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12.",".$cl13.",". $cl14.",". $cl15.",". $cl16.",". $cl17.",". $cl18.",". $cl19.",". $cl20.",". $cl21.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("issssssssssssssssssss",$vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 , $vl13, $vl14, $vl15, $vl16, $vl17, $vl18, $vl19, $vl20, $vl21);
         $result = $stmt->execute();
+		echo "3";
         $last_id = $this->conn->insert_id;
         $stmt->close();
         if ($result) {

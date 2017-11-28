@@ -2,8 +2,11 @@
 <head>
 	<title>Sales Call Form</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script type="text/javascript">
-		$("form").submit(function () {
+	
+</head>
+<body>
+<script type="text/javascript">
+		$("input[type=\"submit\"]").click(function () {
 		    var this_master = $(this);
 		    this_master.find('input[type="checkbox"]').each(function () {
 			var checkbox_this = $(this);
@@ -17,147 +20,154 @@
 		    })
 		});
 	</script>
-</head>
-<body>
-	<form action="/php" name="sales">
+	<form action="submitSales.php" method="post" name="sales">
+		<fieldset id="general">
+			<h2>Salesperson Info</h2>
+			<label for="vl1">Salesperons's Name:</label>
+			<input type="text" name="vl1">
+			<br />
+			<label for="vl2">Date:</label>
+			<input type="text" name="vl2">
+			<br />
+		</fieldset>
 		<fieldset id="general">
 			<h2>General Info</h2>
-			<label for="name">Customer Name:</label>
-			<input type="text" name="name">
+			<label for="vl3">Customer Name:</label>
+			<input type="text" name="vl3">
 			<br />
-			<label for="address">Address:</label>
-			<input type="text" name="address">
+			<label for="vl4">Address:</label>
+			<input type="text" name="vl4">
 			<br />
-			<label for="phone">Phone:</label>
-			<input type="text" name="phone">
+			<label for="vl5">Phone:</label>
+			<input type="text" name="vl5">
 		</fieldset>
 		<fieldset id="poc">
 			<h2>POC</h2>
-			<label for="name">Name:</label>
-			<input type="text" name="name">
+			<label for="vl6">Name:</label>
+			<input type="text" name="vl6">
 			<br />
-			<label for="title">Title:</label>
-			<input type="text" name="title">
+			<label for="vl7">Title:</label>
+			<input type="text" name="vl7">
 			<br />
-			<label for="phone">Phone:</label>
-			<input type="text" name="phone">
+			<label for="vl8">Phone:</label>
+			<input type="text" name="vl8">
 			<br />
-			<label for="email">Email:</label>
-			<input type="text" name="email">
+			<label for="vl9">Email:</label>
+			<input type="text" name="vl9">
 		</fieldset>
 		<fieldset id="type">
 			<h2>Contact Type</h2>
-			<label for="coldcall">Cold Call:</label>
-			<input type="checkbox" name="coldcall">
+			<label for="vl10">Cold Call:</label>
+			<input type="checkbox" name="vl10">
 			<br />
-			<label for="walkin">Walkin:</label>
-			<input type="checkbox" name="walkin">
+			<label for="vl29">Walkin:</label>
+			<input type="checkbox" name="vl29">
 			<br />
-			<label for="referral">Referral:</label>
-			<input type="checkbox" name="referral">
+			<label for="vl31">Referral:</label>
+			<input type="checkbox" name="vl31">
 			<br />
-			<label for="reseller">Reseller:</label>
-			<input type="checkbox" name="reseller">
+			<label for="vl25">Reseller:</label>
+			<input type="checkbox" name="vl25">
 			<br />
-			<label for="repeat">Repeat:</label>
-			<input type="checkbox" name="repeat">
+			<label for="vl26">Repeat:</label>
+			<input type="checkbox" name="vl26">
 			<br />
-			<label for="unk">Unk:</label>
-			<input type="checkbox" name="unk">
+			<label for="vl30">Unk:</label>
+			<input type="checkbox" name="vl30">
 			<br />
-			<label for="google">Google:</label>
-			<input type="checkbox" name="google">
+			<label for="vl27">Google:</label>
+			<input type="checkbox" name="vl27">
 			<br />
-			<label for="bbnow">BB Now:</label>
-			<input type="checkbox" name="bbnow">
+			<label for="vl28">BB Now:</label>
+			<input type="checkbox" name="vl28">
 		</fieldset>
 		<fieldset id="reseller">
 			<h2>Reseller POC</h2>
-			<label for="name">Name:</label>
-			<input type="text" name="name">
+			<label for="vl11">Name:</label>
+			<input type="text" name="vl11">
 			<br />
-			<label for="organization">Organization:</label>
-			<input type="text" name="organization">
+			<label for="vl12">Organization:</label>
+			<input type="text" name="vl12">
 			<br />
-			<label for="phone">Phone:</label>
-			<input type="text" name="phone">
+			<label for="vl13">Phone:</label>
+			<input type="text" name="vl13">
 			<br />
-			<label for="email">Email:</label>
-			<input type="text" name="email">
+			<label for="vl14">Email:</label>
+			<input type="text" name="vl14">
 			<br />
-			<label for="resellerfee">Reseller Fee:</label>
-			<input type="text" name="resellerfee">
+			<label for="vl15">Reseller Fee:</label>
+			<input type="text" name="vl15">
 		</fieldset>
 		<fieldset id="opportunities">
 			<h2>Opportunities</h2>
-			<label for="internet">Internet:</label>
-			<input type="checkbox" name="internet">
+			<label for="vl16">Internet:</label>
+			<input type="checkbox" name="vl16">
 			<br />
-			<label for="backup">Backup Internet:</label>
-			<input type="checkbox" name="backup">
+			<label for="vl39">Backup Internet:</label>
+			<input type="checkbox" name="vl39">
 			<br />
-			<label for="publicip">Public IPs:</label>
-			<input type="checkbox" name="publicip">
+			<label for="vl32">Public IPs:</label>
+			<input type="checkbox" name="vl32">
 			<br />
-			<label for="telephone">Telephone:</label>
-			<input type="checkbox" name="telephone">
+			<label for="vl33">Telephone:</label>
+			<input type="checkbox" name="vl33">
 			<br />
-			<label for="hosting">Hosting:</label>
-			<input type="checkbox" name="hosting">
+			<label for="vl34">Hosting:</label>
+			<input type="checkbox" name="vl34">
 			<br />
-			<label for="webdevelopment">Web Development:</label>
-			<input type="checkbox" name="webdevelopment">
+			<label for="vl35">Web Development:</label>
+			<input type="checkbox" name="vl35">
 			<br />
-			<label for="dns">Domain Name Services:</label>
-			<input type="checkbox" name="dns">
+			<label for="vl36">Domain Name Services:</label>
+			<input type="checkbox" name="vl36">
 			<br />
-			<label for="mns">Managed Services:</label>
-			<input type="checkbox" name="mns">
+			<label for="vl37">Managed Services:</label>
+			<input type="checkbox" name="vl37">
 			<br />
-			<label for="consulting">Consulting:</label>
-			<input type="checkbox" name="consulting">
+			<label for="vl38">Consulting:</label>
+			<input type="checkbox" name="vl38">
 		</fieldset>
 		<fieldset id="customer">
 			<h2>Customer Info</h2>
-			<label for="bandwidthreq">Bandwidth Requirements:</label>
-			<input type="text" name="bandwidthreq">
+			<label for="vl17">Bandwidth Requirements:</label>
+			<input type="text" name="vl17">
 			<br />
-			<label for="howmanyips">How Many IPs:</label>
-			<input type="text" name="howmanyips">
+			<label for="vl18">How Many IPs:</label>
+			<input type="text" name="vl18">
 			<br />
-			<label for="bandwidth">Current Bandwidth:</label>
-			<input type="text" name="bandwidth">
+			<label for="vl19">Current Bandwidth:</label>
+			<input type="text" name="vl19">
 			<br />
-			<label for="provider">Current Provider:</label>
-			<input type="text" name="provider">
+			<label for="vl20">Current Provider:</label>
+			<input type="text" name="vl20">
 			<br />
-			<label for="monthlycharge">Current Monthly Charge:</label>
-			<input type="text" name="monthlycharge">
+			<label for="vl21">Current Monthly Charge:</label>
+			<input type="text" name="vl21">
 			<br />
-			<label for="technology">Current Technology:</label>
-			<input type="text" name="technology">
+			<label for="vl22">Current Technology:</label>
+			<input type="text" name="vl22">
 		</fieldset>
 		<fieldset id="other">
 			<h2>Other Info</h2>
-			<label for="towercoverage">Entered into TowerCoverage:</label>
-			<input type="checkbox" name="towercoverage">
+			<label for="vl23">Entered into TowerCoverage:</label>
+			<input type="checkbox" name="vl23">
 			<br />
-			<label for="serviceability">Serviceability Response:</label>
-			<input type="checkbox" name="serviceability">
+			<label for="vl40">Serviceability Response:</label>
+			<input type="checkbox" name="vl40">
 			<br />
-			<label for="quote">Quote:</label>
-			<input type="checkbox" name="quote">
+			<label for="vl41">Quote:</label>
+			<input type="checkbox" name="vl41">
 			<br />
-			<label for="contractextraction">Contract Execution:</label>
-			<input type="checkbox" name="contractextraction">
+			<label for="vl42">Contract Execution:</label>
+			<input type="checkbox" name="vl42">
 			<br />
-			<label for="setupfee">Setup Fee Receipt:</label>
-			<input type="checkbox" name="setupfee">
+			<label for="vl43">Setup Fee Receipt:</label>
+			<input type="checkbox" name="vl43">
 		</fieldset>
 		<fieldset id="notes">
-			<h2>Notes</h2>
-			<textarea name="notes" form="sales">
-			</textarea>
+			<label for="vl24">Notes:</label>
+			<input type="text" name="vl24">
 		</fieldset>
+		<input type="submit" value="Submit">
 	</form>
 </body>

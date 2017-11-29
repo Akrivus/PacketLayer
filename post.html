@@ -3,76 +3,77 @@
 	<title>Post Install</title>
 </head>
 <body>
-	<form action="/php" method="post" name="post">
+	<form action="submitPost.php" method="post" name="post">
+		<input type="hidden" name="vl1" value="1">		
 		<fieldset id="general">
 			<h2>General</h2>
 			<label>Customer Public IP Address Range:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl2">
 			<br />
 			<label>Default Gateway:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl3">
 			<br />
 			<label>Subnet Mask:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl4">
 		</fieldset>
 		<fieldset id="engineering">
 			<h2>Engineering Post Install Checklist:</h2>
 			<label>Customer Added to Cacti</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl5">
 			<br />
 			<label>Added to IPAM</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl6">
 		</fieldset>
 		<fieldset id="accounting">
 			<h2>Accounting Post Install Checklist</h2>
 			<label>Customer Billed</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl7">
 			<br />
 			<label>Customer Bandwidth Sheet Updated</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl8">
 			<br />
 			<label>Updated Reseller Payables</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl9">
 			<br />
 			<label>Paper Contract Filed</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl10">
 			<br />
 			<label>Update Slaes Report Spreadsheet</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl11">
 			<br />
 			<label>Updated Distribution Site Payables</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl12">
 		</fieldset>
 		<fieldset id="operations">
 			<h2>Operations Post Install Checklist</h2>
 			<label>FCC Form 477 Updated</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl13">
 			<br />
 			<label>Email Distribution Lists Updated</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl14">
 			<br />
 			<label>Organization Contacts In Ticketing System</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl15">
 			<br />
 			<label>Updated Distribution Site Contact List</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl16">
 		</fieldset>
 		<fieldset id="sales">
 			<h2>Sales Post Install Checklist</h2>
 			<label>Customer Maps Updated</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl17">
 			<br />
 			<label>Satisfaction Survey Sent</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl18">
 			<br />
 			<label>IP Address Info Sheet Sent</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl19">
 			<br />
 			<label>Add Contacts to LinkedIn</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl20">
 			<br />
 			<label>Service Commencement Letter Sent</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="vl21">
 		</fieldset>
 		<input type="submit" value="Submit">
 	</form>

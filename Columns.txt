@@ -204,14 +204,29 @@ cl11:Dist_install_labor
 cl12:CPE_install_labor
 
 tableName:Post
-cl1:ID
-cl2:Customer_pIP_range
-cl3:Default_gate
-cl4:Subnet
-cl5:Engineering_post_checks
-cl6:Operation_post_checks
-cl7:Accounting_post_checks
-cl8:Sales_post_checks
+cl1 :ID
+cl2 :Customer_pIP_range
+cl3 :Default_gate
+cl4 :Subnet
+cl5 :Cacti
+cl6 :IPAM
+cl7 :Bill
+cl8 :Bandwidth
+cl9 :Payable
+cl10:Contract_f
+cl11:U_spreadsht
+cl12:U_payable
+cl13:Four
+cl14:Email
+cl15:Ticket
+cl16:U_contact
+cl17:Map
+cl18:Survey
+cl19:IP_info
+cl20:Linkedin
+cl21:Commencement
+
+
 
   ////////////////////////////////////////////////////////
  // DONT PUT AN ID IN SALES BECAUSE IT AUTO INCREMENTS //

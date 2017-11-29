@@ -58,15 +58,15 @@ cl49:Notes
 
 
 tableName:Customer
-cl1:ID
-cl2:POC_alt1_name
-cl3:POC_alt1_title
-cl4:POC_alt1_phone
-cl5:POC_alt1_email
-cl6:POC_alt2_name
-cl7:POC_alt2_title
-cl8:POC_alt2_phone
-cl9:POC_alt2_email
+ cl1:ID
+ cl2:POC_alt1_name
+ cl3:POC_alt1_title
+ cl4:POC_alt1_phone
+ cl5:POC_alt1_email
+ cl6:POC_alt2_name
+ cl7:POC_alt2_title
+ cl8:POC_alt2_phone
+ cl9:POC_alt2_email
 cl10:POC_alt3_name
 cl11:POC_alt3_title
 cl12:POC_alt3_phone
@@ -82,10 +82,10 @@ cl21:Property_name
 cl22:Building_owners
 cl23:Property_mng_co
 cl24:POC1_Building_name
-cl25:POC2_Building_email
-cl26:Notes
-cl27:POC1_Building_phone
-cl28:POC1_Building_email
+cl25:POC1_Building_email
+cl26:POC1_Building_phone
+cl27:Notes
+cl28:POC2_Building_email
 cl29:POC2_Building_name
 cl30:POC2_Building_phone
 

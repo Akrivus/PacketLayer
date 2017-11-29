@@ -8,36 +8,36 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     //getting values
 
 	//all the columns 
-	$cl1 = $_POST['cl1'];    //ID
-	$cl2 = $_POST['cl2'];
-	$cl3 =$_POST['cl3'];
-	$cl4 =$_POST['cl4'];
-	$cl5 =$_POST['cl5'];
-	$cl6 =$_POST['cl6'];
-	$cl7 =$_POST['cl7'];
-	$cl8 =$_POST['cl8'];
-	$cl9 =$_POST['cl9'];
-	$cl10 =$_POST['cl10'];
-	$cl11 =$_POST['cl11'];
-	$cl12 =$_POST['cl12'];
-	$cl13 =$_POST['cl13'];
-	$cl14 =$_POST['cl14'];
-	$cl15 =$_POST['cl15'];
-	$cl16 =$_POST['cl16'];
-	$cl17 =$_POST['cl17'];
-	$cl18 =$_POST['cl18'];
-	$cl19 =$_POST['cl19'];
-	$cl20 =$_POST['cl20'];
-	$cl21 =$_POST['cl21'];
-	$cl22 =$_POST['cl22'];
-	$cl23 =$_POST['cl23'];
-	$cl24 =$_POST['cl24'];
-	$cl25 =$_POST['cl25'];
-	$cl26 =$_POST['cl26'];
-	$cl27 =$_POST['cl27'];
-	$cl28 =$_POST['cl28'];
-	$cl29 =$_POST['cl29'];
-	$cl30 =$_POST['cl30'];
+	$cl1 = "ID";   //ID
+	$cl2 = "POC_alt1_name";
+	$cl3 = "POC_alt1_title";
+	$cl4 = "POC_alt1_phone";
+	$cl5 = "POC_alt1_email";
+	$cl6 = "POC_alt2_name";
+	$cl7 = "POC_alt2_title";
+	$cl8 = "POC_alt2_phone";
+	$cl9 = "POC_alt2_email";
+	$cl10 ="POC_alt3_name";
+	$cl11 ="POC_alt3_title";
+	$cl12 ="POC_alt3_phone";
+	$cl13 ="POC_alt3_email";
+	$cl14 ="POC_alt4_name";
+	$cl15 ="POC_alt4_title";
+	$cl16 ="POC_alt4_phone";
+	$cl17 ="POC_alt4_email";
+	$cl18 ="Customer_notes";
+	$cl19 ="Building_ownership";
+	$cl20 ="Multitenant";
+	$cl21 ="Property_name";
+	$cl22 ="Building_owners";
+	$cl23 ="Property_mng_co";
+	$cl24 ="POC1_Building_name";
+	$cl25 ="POC1_Building_email";
+	$cl26 ="POC1_Building_phone";
+	$cl27 ="Notes";
+	$cl28 ="POC2_Building_email";
+	$cl29 ="POC2_Building_name";
+	$cl30 ="POC2_Building_phone";
 	//all the values 
 	$vl1 = $_POST['vl1'];    //ID
 	$vl2 = $_POST['vl2'];
@@ -57,15 +57,27 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	$vl16 =$_POST['vl16'];
 	$vl17 =$_POST['vl17'];
 	$vl18 =$_POST['vl18'];
-	$vl19 =$_POST['vl19'];
-	$vl20 =$_POST['vl20'];
+	if(empty($_POST['vl19'])){
+		$vl19 = "";
+	}else {
+		$vl19 =$_POST['vl19'];
+	}	
+	if(empty($_POST['vl20'])){
+		$vl20 = "";
+	}else {
+		$vl20 =$_POST['vl20'];
+	}
 	$vl21 =$_POST['vl21'];
 	$vl22 =$_POST['vl22'];
 	$vl23 =$_POST['vl23'];
 	$vl24 =$_POST['vl24'];
 	$vl25 =$_POST['vl25'];
 	$vl26 =$_POST['vl26'];
-	$vl27 =$_POST['vl27'];
+	if(empty($_POST['vl27'])){
+		$vl27 = "";
+	}else {
+		$vl27 =$_POST['vl27'];
+	}
 	$vl28 =$_POST['vl28'];
 	$vl29 =$_POST['vl29'];
 	$vl30 =$_POST['vl30'];
@@ -95,4 +107,3 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $response['message']='You are not authorized';
 }
 
-echo json_encode($response);

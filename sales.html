@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <head>
 	<title>Sales Call Form</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
 </head>
 <body>
-<script type="text/javascript">
-		$("input[type=\"submit\"]").click(function () {
-		    var this_master = $(this);
-		    this_master.find('input[type="checkbox"]').each(function () {
-			var checkbox_this = $(this);
-			if (checkbox_this.is(":checked") == true) {
-			    checkbox_this.attr('value','1');
-			}
-			else {
-			    checkbox_this.prop('checked',true);
-			    checkbox_this.attr('value','0');
-			}
-		    })
-		});
-	</script>
 	<form action="submitSales.php" method="post" name="sales">
 		<fieldset id="general">
 			<h2>Salesperson Info</h2>

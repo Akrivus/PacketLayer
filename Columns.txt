@@ -29,10 +29,33 @@ cl20:Technician5_name
 cl21:Technician5_start
 cl22:Technician5_stop
 cl23:Technician5_hours
-cl24:CPE_radio_config_checks
-cl25:CPE_install_checks
-cl26:Max_capacity_circ
-cl27:Notes
+cl24:Technician6_name
+cl25:Technician6_start
+cl26:Technician6_stop
+cl27:Technician6_hours
+cl28:Technician7_name
+cl29:Technician7_start
+cl30:Technician7_stop
+cl31:Technician7_hours
+cl32:Technician8_name
+cl33:Technician8_start
+cl34:Technician8_stop
+cl35:Technician8_hours
+cl36:System_log
+cl37:NTP
+cl38:SSH
+cl39:SNMP
+cl40:GPS
+cl41:Timezone
+cl42:User_pass
+cl43:Host
+cl44:Scrn_sht
+cl45:Rate
+cl46:Labeling
+cl47:Pics
+cl48:Max_capacity_circ
+cl49:Notes
+
 
 tableName:Customer
 cl1:ID
@@ -147,7 +170,7 @@ cl25:Notes
 tableName:Plotting
 cl1:ID
 cl2:Existing_infrastructure
-cl3:Radio_survey
+cl3:Survey
 cl4:TX_radio
 cl5:RX_radio
 cl6:Existing_sector
@@ -157,15 +180,6 @@ cl9:Parts_list
 cl10:Notes
 cl11:Dist_install_labor
 cl12:CPE_install_labor
-cl13:Salesperson
-cl14:Customer_name
-cl15:Date
-cl16:Address
-cl17:Bandwidth_req
-cl18:Distribution
-cl19:Onsite_survey
-cl20:Visual_survey
-cl21:Num_people
 
 tableName:Post
 cl1:ID
@@ -225,9 +239,6 @@ cl40:Seviceability
 cl41:Quote
 cl42:Contract_ex
 cl43:Setup_fee_receipt
-
-
-
 
 tableName:User
 cl1:Username

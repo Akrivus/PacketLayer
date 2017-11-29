@@ -80,10 +80,10 @@ class DbOperation
             return ['no'];
         }
     }
-	public function createInstallation($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20)
+	public function createInstallation($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20,$cl21 , $cl22 ,$cl23, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20,$vl21 , $vl22 ,$vl23)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Installation(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12 .",".$cl13 .",".$cl14 .",".$cl15 .",".$cl16 .",".$cl17 .",".$cl18 .",".$cl19 .",".$cl20.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("isssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 );
+        $stmt = $this->conn->prepare("INSERT INTO Installation(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12 .",".$cl13 .",".$cl14 .",".$cl15 .",".$cl16 .",".$cl17 .",".$cl18 .",".$cl19 .",".$cl20.",".$cl21 .",". $cl22 .",".$cl23.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt->bind_param("issssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20,$vl21 , $vl22 ,$vl23 );
         $result = $stmt->execute();
         $last_id = $this->conn->insert_id;
         $stmt->close();

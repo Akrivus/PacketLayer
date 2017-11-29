@@ -3,80 +3,79 @@
 	<title>Installation Instructions</title>
 </head>
 <body>
-	<form action="/php" method="post" name="installation">
+	<form action="submitInstallation.php" method="post" name="installation">
+		<input type="hidden" name="vl1" value="1">		
 		<fieldset id="general">
 			<h2>General</h2>
 			<label>Install Due Date:</label>
-			<input type="date" name="name">
+			<input type="date" name="vl2">
 			<br />
 			<label>Install Date:</label>
-			<input type="date" name="name">
+			<input type="date" name="vl3">
 			<br />
 			<label>Install Time:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl4">
 			<br />
 			<label>Installers Needed:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl5">
 			<br />
 			<label>IP Addresses Needed:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl6">
 			<br />
 			<label>Bandwidth:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl7">
 		</fieldset>
 		<fieldset id="ip">
 			<label>Customer Public IP Range:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl8">
 			<br />
 			<label>VLAN:</label>
-			<input type="checkbox" name="email">
+			<input type="checkbox" name="vl9">
 			<br />
 			<label>Public IP Gateway:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl10">
 			<br />
 			<label>Public IP Subnet Mask:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl11">
 			<br />
 			<label>CPE Private IP:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl12">
 			<br />
 			<label>Access Point IP:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl13">
 			<br />
 			<label>AP Subnet Mask:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl14">
 			<br />
 			<label>AP Gateway:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl15">
 			<br />
 		</fieldset>
 		<fieldset id="poc">
 			<h2>Customer Technical POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl16">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl17">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl18">
 			<h2>Faculty Access POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl21">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl22">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl23">
 		</fieldset>
 		<fieldset id="notes">
 			<h2>Special Supplies or Tools Needed</h2>
-			<textarea name="special" form="installation">
-			</textarea>
+			<input type="text" name="cl19" form="installation">
 			<h2>Additional Instructions</h2>
-			<textarea name="instructions" form="installation">
-			</textarea>
+			<input type="text" name="vl20" form="installation">
 		</fieldset>
 		<input type="submit" value="Submit">
 	</form>

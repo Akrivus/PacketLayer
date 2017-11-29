@@ -141,15 +141,15 @@ cl48:Max_capacity_circ
 cl49:Notes
 
 tableName:Installation
-cl1:ID
-cl2:Install_due
-cl3:Install_date
-cl4:Install_time
-cl5:Installers_needed
-cl6:IPs_needed
-cl7:Bandwidth
-cl8:Customer_pIP_range
-cl9:VLAN
+cl1 :ID
+cl2 :Install_due
+cl3 :Install_date
+cl4 :Install_time
+cl5 :Installers_needed
+cl6 :IPs_needed
+cl7 :Bandwidth
+cl8 :Customer_pIP_range
+cl9 :VLAN
 cl10:pIP_Gateway
 cl11:pIP_subnet
 cl12:CPE_prIP
@@ -161,6 +161,9 @@ cl17:Customer_technical_POC_phone
 cl18:Customer_technical_POC_email
 cl19:Special
 cl20:Additional_instructions
+cl21:Faculty_technical_POC_name
+cl22:Faculty_technical_POC_phone
+cl23:Faculty_technical_POC_email
 
 tableName:Onsite
 cl1:ID	               

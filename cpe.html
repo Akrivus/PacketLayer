@@ -3,151 +3,157 @@
 	<title>CPE Install</title>
 </head>
 <body>
-	<form action="/php" method="post" name="cpe">
+	<form action="submitCPE.php" method="post" name="cpe">
+		<input type="hidden" name="vl1" value="1">
+		<fieldset id="opener">
+			<label>Date:</label>
+			<input type="text" name="vl2">
+			<label>Name:</label>
+			<input type="text" name="vl3">
+		</fieldset>
 		<fieldset id="hours">
 			<h2>Hours</h2>
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl4">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl5">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl6">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl7">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl8">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl9">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl10">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl11">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl12">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl13">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl14">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl15">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl16">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl17">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl18">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl19">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl20">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl21">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl22">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl23">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl24">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl25">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl26">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl27">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl28">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl29">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl30">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl31">
 			<br />
 			<label>Technician Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl32">
 			<br />
 			<label>Start:</label>
-			<input type="time" name="name">
+			<input type="time" name="vl33">
 			<br />
 			<label>End:</label>
-			<input type="time" name="phone">
+			<input type="time" name="vl34">
 			<br />
 			<label>Hours:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl35">
 		</fieldset>
 		<fieldset id="radio">
 			<h2>Radio Config Checklist:</h2>
 			<label>Enable System Log</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="36">
 			<br />
 			<label>NTP Config</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="37">
 			<br />
 			<label>SSH Port</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="38">
 			<br />
 			<label>SNMP Settings</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="39">
 			<br />
 			<label>GPS Coordinates</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="40">
 			<br />
 			<label>Timezone</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="41">
 			<br />
 			<label>Username/Password</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="42">
 			<br />
 			<label>Host Name Within Naming PLC Convention</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="43">
 		</fieldset>
 		<fieldset id="checklist">
 			<label>Screenshots of Bandwidth</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="44">
 			<br />
 			<label>Rate Limiting</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="45">
 			<br />
 			<label>Labeling Gear</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="46">
 			<br />
 			<label>Taking Pictures</label>
-			<input type="checkbox" name="g">
+			<input type="checkbox" name="47">
 		</fieldset>
 		<fieldset id="notes">
-			<h2>Maximum Capacity of Circut</h2>
-			<textarea name="circuit" form="cpe">
-			</textarea>
-			<h2>Notes</h2>
-			<textarea name="notes" form="cpe">
-			</textarea>
+			<label>Maximum Capacity of Circut</label>
+			<br />
+			<input name="circuit" form="48">
+			<label>Notes</label>
+			<input name="notes" form="49">
 		</fieldset>
 		<input type="submit" value="Submit">
 	</form>

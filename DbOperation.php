@@ -40,7 +40,6 @@ class DbOperation
         $result = $stmt->execute();
         $stmt->close();
         if ($result) {
-			echo "yep";
 			$sql = "SELECT * FROM CPE where ID = ".$vl1 . " AND ". $cl16. " = '".$vl16."' AND ".$cl14." = '". $vl14."' LIMIT 1";
 			$result = $this->conn->query($sql);
 			return ['yes', $result ];        
@@ -66,15 +65,15 @@ class DbOperation
         }
     }
 	
-	public function createDistribution($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20 ,$cl21 ,$cl22 ,$cl23 ,$cl24,$cl25,$cl26,$cl27, $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25,$vl26,$vl27)
+	public function createDistribution($cl1 , $cl2 ,$cl3 ,$cl4 ,$cl5 ,$cl6 ,$cl7 ,$cl8 ,$cl9 ,$cl10 ,$cl11 ,$cl12 ,$cl13 ,$cl14 ,$cl15 ,$cl16 ,$cl17 ,$cl18 ,$cl19 ,$cl20 ,$cl21 ,$cl22 ,$cl23, $cl24, $cl25 ,$cl26 ,$cl27 ,$cl28 ,$cl29 ,$cl30 ,$cl31, $cl32, $cl33 ,$cl34 ,$cl35 ,$cl36 ,$cl37 ,$cl38 ,$cl39 ,$cl40 ,$cl41 ,$cl42 ,$cl43,$cl44 ,$cl45 ,$cl46 ,$cl47 ,$cl48 ,$cl49,  $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25 ,$vl26 ,$vl27 ,$vl28 ,$vl29 ,$vl30 ,$vl31,$vl32, $vl33 ,$vl34 ,$vl35 ,$vl36 ,$vl37 ,$vl38 ,$vl39 ,$vl40 ,$vl41 ,$vl42 ,$vl43 ,$vl44 ,$vl45 ,$vl46 ,$vl47 ,$vl48 ,$vl49)
     {
-        $stmt = $this->conn->prepare("INSERT INTO Distribution(".$cl1 .",". $cl2 .",".$cl3 .",".$cl4 .",".$cl5 .",".$cl6 .",".$cl7 .",".$cl8 .",".$cl9 .",".$cl10 .",".$cl11 .",".$cl12 .",".$cl13 .",".$cl14 .",".$cl15 .",".$cl16 .",".$cl17 .",".$cl18 .",".$cl19 .",".$cl20 .",".$cl21 .",".$cl22 .",".$cl23 .",".$cl24.",".$cl25.",".$cl26.",".$cl27.") values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-        $stmt->bind_param("issssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25,$vl26,$vl27);
+        $stmt = $this->conn->prepare("INSERT INTO Distribution(".$cl1 .", ". $cl2 .", ".$cl3 .", ".$cl4 .", ".$cl5 .", ".$cl6 .", ".$cl7 .", ".$cl8 .", ".$cl9 .", ".$cl10 .", ".$cl11 .", ".$cl12 .", ".$cl13 .", ".$cl14 .", ".$cl15 .", ".$cl16 .", ".$cl17 .", ".$cl18 .", ".$cl19 .", ".$cl20 .", ".$cl21 .", ".$cl22 .", ".$cl23 .", ".$cl24.", ".$cl25.", ".$cl26.", ".$cl27.",".$cl28 .",".$cl29 .",".$cl30 .",".$cl31.",". $cl32.",". $cl33 .",".$cl34 .",".$cl35 .",".$cl36 .",".$cl37 .",".$cl38 .",".$cl39 .",".$cl40 .",".$cl41 .",".$cl42 .",".$cl43.",".$cl44 .",".$cl45 .",".$cl46 .",".$cl47 .",".$cl48 .",".$cl49.") values(?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?, ?, ?)");
+		//echo "INSERT INTO Distribution(".$cl1 .", ". $cl2 .", ".$cl3 .", ".$cl4 .", ".$cl5 .", ".$cl6 .", ".$cl7 .", ".$cl8 .", ".$cl9 .", ".$cl10 .", ".$cl11 .", ".$cl12 .", ".$cl13 .", ".$cl14 .", ".$cl15 .", ".$cl16 .", ".$cl17 .", ".$cl18 .", ".$cl19 .", ".$cl20 .", ".$cl21 .", ".$cl22 .", ".$cl23 .", ".$cl24.", ".$cl25.", ".$cl26.", ".$cl27.",".$cl28 .",".$cl29 .",".$cl30 .",".$cl31.",". $cl32.",". $cl33 .",".$cl34 .",".$cl35 .",".$cl36 .",".$cl37 .",".$cl38 .",".$cl39 .",".$cl40 .",".$cl41 .",".$cl42 .",".$cl43.",".$cl44 .",".$cl45 .",".$cl46 .",".$cl47 .",".$cl48 .",".$cl49.") values(?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?, ?, ?)";
+		$stmt->bind_param("issssssssssssssssssssssssssssssssssssssssssssssss", $vl1 , $vl2 ,$vl3 ,$vl4 ,$vl5 ,$vl6 ,$vl7 ,$vl8 ,$vl9 ,$vl10 ,$vl11 ,$vl12 ,$vl13 ,$vl14 ,$vl15 ,$vl16 ,$vl17 ,$vl18 ,$vl19 ,$vl20 ,$vl21 ,$vl22 ,$vl23 ,$vl24, $vl25 ,$vl26 ,$vl27 ,$vl28 ,$vl29 ,$vl30 ,$vl31,$vl32, $vl33 ,$vl34 ,$vl35 ,$vl36 ,$vl37 ,$vl38 ,$vl39 ,$vl40 ,$vl41 ,$vl42 ,$vl43 ,$vl44 ,$vl45 ,$vl46 ,$vl47 ,$vl48 ,$vl49);
         $result = $stmt->execute();
-        $last_id = $this->conn->insert_id;
         $stmt->close();
         if ($result) {
-            $sql = "SELECT * FROM Distribution where ID = ".$vl1 . " AND ". $cl16. " = '".$vl16."' AND ".$cl14." = '". $vl14."' LIMIT 1";
+			$sql = "SELECT * FROM Distribution where ID = ".$vl1 . " AND ". $cl16. " = '".$vl16."' AND ".$cl14." = '". $vl14."' LIMIT 1";
 			$result = $this->conn->query($sql);
 			return ['yes', $result ];        
 			} else {

@@ -3,6 +3,18 @@
 	<title>Plotting Form</title>
 </head>
 <body>
+	Go to page...
+	<select onchange="window.location=this.options[this.selectedIndex].value">
+		<option value=""></option>
+		<option value="sales.html">Sales Call Form</option>
+		<option value="plotting.html">Plotting Form</option>
+		<option value="onsite.html">Onsite Survey</option>
+		<option value="customer.html">Customer Details</option>
+		<option value="installation.html">Installation Instructions</option>
+		<option value="cpe.html">CPE Installation</option>
+		<option value="distribution.html">Distribution Site Installation</option>
+		<option value="post.html">Post Installation</option>
+    	</select>
 	<form action="submitPlotting.php" method="post" name="plotting">
 		<input type="hidden" name="vl1" value="1">
 		<fieldset id="general">

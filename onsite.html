@@ -36,231 +36,223 @@
 		<option value="distribution.html">Distribution Site Installation</option>
 		<option value="post.html">Post Installation</option>
     	</select>
-	<form action="/submitOnsite.php" method="post" name="onsite">
+	<form action="submitOnsite.php" method="post" name="onsite">
+		<input type="hidden" name="vl1" value="1">		
 		<fieldset id="general">
 			<h2>General Info</h2>
 			<label>Survey Date:</label>
-			<input type="date" name="name">
+			<input type="date" name="vl2">
 			<br />
 			<label>Survey Time:</label>
-			<input type="time" name="address">
+			<input type="time" name="vl3">
 			<br />
 			<label>Survey POC:</label>
-			<input type="text" name="salesperson">
+			<input type="text" name="vl4">
+			<br >
+			<label>Surveyor Name:</label>
+			<input type="text" name="vl5">
 		</fieldset>
 		<fieldset id="roof">
 			<h2>Roof</h2>
 			<label>Is distribution point visible:</label>
-			<input type="checkbox" name="site">
+			<input type="checkbox" name="vl6">
 			<br />
-			<label>What other potential distribution points are visible:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<label>Possible Distribution Point:</label>
+			<input type="text"  name="vl7">
+			<br />
+			<label>Cardnial Direction:</label>
+			<input type="text"  name="vl8">
+			<br />
+			<label>Possible Distribution Point:</label>
+			<input type="text"  name="vl9">
+			<br />
+			<label>Cardnial Direction:</label>
+			<input type="text"  name="vl10">
+			<br />
+			<label>Possible Distribution Point:</label>
+			<input type="text"  name="vl11">
+			<br />
+			<label>Cardnial Direction:</label>
+			<input type="text"  name="vl12">
 			<br />
 			<h3>How will radio be mounted?</h3>
 			<label>Skid, notate size needed:</label>
-			<input type="checkbox" name="needssurvey">
-			<input type="text" name="needssurvey">
+			<input type="text" name="vl13">
 			<br />
 			<label>Unistrut, note composition of attach point:</label>
-			<input type="checkbox" name="needssurvey">
-			<input type="text" name="needssurvey">
+			<input type="text" name="vl26">
 			<br />
 			<label>J-Bracket:</label>
-			<input type="checkbox" name="needssurvey">
+			<input type="checkbox" name="vl27">
 			<br />
 			<label>Existing Pole:</label>
-			<input type="checkbox" name="needssurvey">
+			<input type="checkbox" name="vl28">
 			<br />
 			<label>Other:</label>
-			<input type="checkbox" name="needssurvey">
-			<input type="text" name="needssurvey">
+			<input type="text" name="vl29">
 			<br />
-			<label>What other potential distribution points are visible:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<label>List other communications Equipment on roof with description:</label>
+			<input type="text"  name="vl14">
 			<br />
 			<label>Is this a potential redistribution site:</label>
-			<input type="checkbox" name="site">
+			<input type="checkbox" name="vl15">
 		</fieldset>
 		<fieldset id="facility">
 			<label>Describe how roof is accessed:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl16">
 			<br />
 			<label>Describe building penetration method:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl17">
 			<br />
 			<label>Describe cable run path:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl18">
 			<br />
 			<label>Describe Demarc location:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl19">
 			<br />
 			<label>Other ISPs:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl30">
 			<br />
 			<label>Where will CPE equipment be mounted?:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl20">
 			<br />
-			<label>Building type:</label>
+			<h2>Building type:</h2>
 			<label>Single tenant</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl21">
 			<br />
 			<label>Multifloor</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl31">
 			<br />
 			<label>Single story</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl32">
 			<br />
 			<label>Multitenant</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl33">
 			<br />
 			<label>Strip mall</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl34">
 			<br />
 			<label>Warehouse</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl35">
 			<br />
 			<label>Plant</label>
-			<input type="radio" name="">
+			<input type="checkbox" name="vl36">
 		</fieldset>
 		<fieldset id="pictures">
 			<h2>Picture Checklist</h2>
 			<label>Roof</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl22">
 			<br />
 			<label>Mounting Location</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl37">
 			<br />
 			<label>Penetration Point</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl38">
 			<br />
 			<label>Cable Run Path</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl39">
 			<br />
 			<label>Demarc Space</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl40">
 			<br />
 			<label>CPE Mounting Space</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl41">
 			<br />
 			<label>Customer Rack/Datacenter</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl42">
 			<br />
 			<label>Power Source</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl43">
 			<br />
 		</fieldset>
 		<fieldset id="equipment">
 			<h2>Installation Equipment Checklist</h2>
 			<label>ToughCable</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl24">
 			<br />
 			<label>Indoor Cable</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl44">
 			<br />
-			<label>Roor Skid: Size</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
+			<label>Roof Skid:</label>
+			<input type="checkbox" name="vl45">
 			<br />
 			<label>Rubber Mat</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl46">
 			<br />
 			<label>Cinder Blocks</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl47">
 			<br />
-			<label>Pipe: Size</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
+			<label>Pipe:</label>
+			<input type="checkbox" name="vl48">
 			<br />
 			<label>Unistrut</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl49">
 			<br />
-			<label>Unistrut Clamps: Size</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
+			<label>Unistrut Clamps:</label>
+			<input type="checkbox" name="vl50">
 			<br />
 			<label>Bolts</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl51">
 			<br />
 			<label>Self Tappers</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl52">
 			<br />
 			<label>Tapcons</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl53">
 			<br />
 			<label>Coax Clamps</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl54">
 			<br />
 			<label>Zip Ties</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl55">
 			<br />
 			<label>Anchor Zip Ties</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl56">
 			<br />
 			<label>Wood Screws</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl57">
 			<br />
 			<label>Lag Bolts</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl58">
 			<br />
 			<label>Metal Screws</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl59">
 			<br />
 			<label>Hammer Drill</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl60">
 			<br />
 			<label>Fish Sticks</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl61">
 			<br />
 			<label>Fishing Tape</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl62">
 			<br />
-			<label>Router: Model</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="model">
+			<label>Router:</label>
+			<input type="checkbox" name="vl63">
 			<br />
-			<label>Switch: Model</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="model">
+			<label>Switch:</label>
+			<input type="checkbox" name="vl64">
 			<br />
 			<label>Power Strip</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl65">
 			<br />
-			<label>Fiber: Length</label>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="length">
+			<label>Fiber:</label>
+			<input type="checkbox" name="vl66">
 			<br />
 			<label>Fiber Ends</label>
-			<input type="checkbox" name="coldcall">
+			<input type="checkbox" name="vl67">
 			<br />
 			<h2>Miscellaneous</h2>
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
-			<br />
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
-			<br />
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
-			<br />
-			<input type="checkbox" name="coldcall">
-			<input type="text" name="size">
+			<input type="text" name="vl68">
+			<input type="text" name="vl69">
+			<input type="text" name="vl70">
 		</fieldset>
 		<fieldset id="install">
 			<label>How many installers will be required?:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl23" form="onsite">
 			<br />
 			<label>Additional notes:</label>
-			<textarea name="site" form="onsite">
-			</textarea>
+			<input type="text"  name="vl25" form="onsite">
 		</fieldset>
 		<input type="submit" value="Submit">
 	</form>

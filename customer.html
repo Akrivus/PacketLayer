@@ -36,98 +36,97 @@
 		<option value="distribution.html">Distribution Site Installation</option>
 		<option value="post.html">Post Installation</option>
     	</select>
-	<form action="/php" method="post" name="customer">
+	<form action="submitCustomer.php" method="post" name="customer">
+		<input type="hidden" name="vl1" value="1">
 		<fieldset id="pocs">
 			<h2>Alternate Customer POCs</h2>
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl2">
 			<br />
 			<label>Title:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl3">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl4">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl5">
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl6">
 			<br />
 			<label>Title:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl7">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl8">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl9">
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl10">
 			<br />
 			<label>Title:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl11">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl12">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl13">
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl14">
 			<br />
 			<label>Title:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl15">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl16">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl17">
 			<h2>Customer Notes</h2>
-			<textarea name="notes" form="customer">
-			</textarea>
+			<input type="text" name="vl18">
 		</fieldset>
 		<fieldset id="property">
 			<label>Does customer own building:</label>
-			<input type="checkbox" name="ownsbulding">
+			<input type="checkbox" name="vl19">
 			<br />
 			<label>Multitenant building:</label>
-			<input type="checkbox" name="multitenant">
+			<input type="checkbox" name="vl20">
 			<br />
 			<label>Property name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl21">
 			<br />
 			<label>Building owners:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl22">
 			<br />
 			<label>Property management company:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl23">
 			<br />
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl24">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl26">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl25">
 			<h2>POC</h2>
 			<label>Name:</label>
-			<input type="text" name="name">
+			<input type="text" name="vl29">
 			<br />
 			<label>Phone:</label>
-			<input type="text" name="phone">
+			<input type="text" name="vl30">
 			<br />
 			<label>Email:</label>
-			<input type="text" name="email">
+			<input type="text" name="vl28">
 			<h2>Customer Notes</h2>
-			<textarea name="notes" form="customer">
-			</textarea>
+			<input name="notes" form="vl27">
 		</fieldset>
 		<input type="submit" value="Submit">
 	</form>

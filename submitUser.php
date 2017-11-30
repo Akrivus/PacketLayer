@@ -46,4 +46,3 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     $response['message']='You are not authorized';
 }
 
-echo json_encode($response);

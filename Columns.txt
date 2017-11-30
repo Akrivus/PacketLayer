@@ -166,31 +166,76 @@ cl22:Faculty_technical_POC_phone
 cl23:Faculty_technical_POC_email
 
 tableName:Onsite
-cl1:ID	               
-cl2:Survery_date	   
-cl3:Survery_time	   
-cl4:Survery_POC	       
-cl5:Surveyor_name	   
-cl6:Dist_visibility	   
-cl7:Dist_1	           
-cl8:Dist_1_direction   
-cl9:Dist_2	           
-cl10:Dist_2_direction   
-cl11:Dist_3	           
-cl12:Dist_3_direction   
-cl13:Radio_mount	       
-cl14:Other_comm_equip   
-cl15:PRS	
-cl16:Roof_acess	   
+cl1 :ID
+cl2 :Survery_date
+cl3 :Survery_time
+cl4 :Survery_POC
+cl5 :Surveyor_name
+cl6 :Dist_visibility
+cl7 :Dist_1
+cl8 :Dist_1_direction
+cl9 :Dist_2
+cl10:Dist_2_direction
+cl11:Dist_3
+cl12:Dist_3_direction
+cl13:Skid
+cl14:Other_comm_equip
+cl15:PRS
+cl16:Roof_acess
 cl17:Building_penetration
-cl18:Cable_path	       
-cl19:Demarc_location	   
-cl20:CPE_mount	       
-cl21:Building_type	   
-cl22:Picture_checks	   
-cl23:Num_of_installers  
-cl24:Installation_checks
-cl25:Notes              
+cl18:Cable_path
+cl19:Demarc_location
+cl20:CPE_mount
+cl21:Single
+cl22:Roof
+cl23:Num_of_installers
+cl24:ToughCable
+cl25:Notes   
+cl26:Unistrut
+cl27:J_bracket
+cl28:Existing
+cl29:Other
+cl30:Other_Isp
+cl31:Multifloor
+cl32:Single_story
+cl33:Multitenant
+cl34:Strip_mall
+cl35:Warehouse
+cl36:Plant
+cl37:Mounting
+cl38:Penetration
+cl39:Cable
+cl40:Demarc
+cl41:CPE
+cl42:Customer
+cl43:Power
+cl44:Indoor
+cl45:Roof_skid
+cl46:Rubber
+cl47:Cinder
+cl48:Pipe
+cl49:Unistrut_
+cl50:U_clamps
+cl51:Bolts
+cl52:Self
+cl53:Tapcons
+cl54:Coax
+cl55:Zip
+cl56:Anchor
+cl57:Wood
+cl58:Lag
+cl59:Metal
+cl60:Hammer
+cl61:Fish
+cl62:Fishing
+cl63:Router
+cl64:Switch
+cl65:Power_s
+cl66:Fiber_l
+cl67:Fiber_e
+cl68:Misc1
+cl69:Misc2
+cl70:Misc3
 
 tableName:Plotting
 cl1:ID

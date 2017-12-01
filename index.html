@@ -9,11 +9,15 @@
 			method: $("form").attr("method"),
 			data: $("form").serialize(),
 			success: function(result) {
-				var response = JSON.parse(result);
-				for (var i = 0; i < response.length; ++i) {
-					$("#results").append("<li id=" + k + ">"
-						
-					"</li>");
+				var responses = JSON.parse(result);
+				for (var i = 0; i < responses.length; ++i) {
+					$("#results").append("<li id=\"" + responses[i].ID + "\"><a href=\"sales.html?i=" + responses[i].ID + "\">" +
+						"Name: " + responses[i].Customer_name + "<br />" +
+						"Date: " + responses[i].Sales_Date + "<br />" +
+						"Salesperson: " + responses[i].Salesperson + "<br />" +
+						"Address: " + responses[i].Address + "<br />" +
+						"Phone: " + responses[i].Phone + "<br />" +
+					"</a></li>");
 				}
 			}
 		});

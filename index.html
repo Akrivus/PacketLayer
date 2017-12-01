@@ -3,14 +3,30 @@
 	<title>Sales Call Form</title>	
 	<link rel="stylesheet" href="http://66.6.115.212/pm_packetlayer/app.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$("#search").ajax({
+			url: $("form").attr("action"),
+			method: $("form").attr("method"),
+			data: $("form").serialize(),
+			success: function(result) {
+				var response = JSON.parse(result);
+				for (var i = 0; i < response.length; ++i) {
+					$("#results").append("<li id=" + k + ">"
+						
+					"</li>");
+				}
+			}
+		});
+	</script>
 </head>
 <body>
 	<form action="http://66.6.115.212/pm_packetlayer/search.php" method="post" name="search">
 		<label>Search</label>
 		<input type="text" name="query">
-		<input type="submit" value="Search">
 	</form>
+	<button id="search">Search</button>
 	<button id="createNewSale">New Sale</button>
 	<ul id="results">
+		
 	</ul>
 </body>

@@ -1,90 +1,16 @@
 <!DOCTYPE html>
 <head>
 	<title>Sales Call Form</title>	
-	<style>
-		body, html {
-			background-color: #C5C5C5;
-			font-family: sans-serif;
-		}
-		body, html, label, input, select {
-			font-size: 6vh;
-		}
-		fieldset {
-			width: 100%;
-			border: none;
-			padding: 0;
-			margin: 0;
-		}
-		label {
-			display: block;
-		}
-		input[type=checkbox] {
-			outline: none;
-			width: 58px;
-			height: 23px;
-			font-size: 11px;
-			line-height: 2;
-			display: block;
-			font-weight: bold;
-			border-radius: 3px;
-			border: 1px solid #B9B9B9;
-			-webkit-appearance: none;
-			background-image: -webkit-gradient( 
-				linear, left top, left bottom,
-				color-stop(0, #E8E8E8),
-				color-stop(0.5, #E8E8E8),
-				color-stop(0.5, #FDFDFD),
-				color-stop(1, #FDFDFD)
-			);
-			box-shadow: 0px 1px 2px #AFAFAF inset;
-			color: #7F7F7F;
-		}
-		input[type=checkbox]:checked {
-			background-image: -webkit-gradient( 
-				linear, left top, left bottom,
-				color-stop(0, #36F87E),
-				color-stop(0.5, #36F87E),
-				color-stop(0.5, #66F87E),
-				color-stop(1, #66F87E)
-			);
-			box-shadow: 0px 1px 2px #14A349 inset;
-			color: #fff;
-			text-shadow: 0px -1px 1px #000;
-			border: 1px solid #99E8B9;
-		}
-		input[type=checkbox]:before {
-			content: 'NO';
-			border-radius: 3px;
-			border-top: 1px solid #F7F7F7;
-			border-right: 1px solid #999999;
-			border-bottom: 1px solid: #BABABA;
-			border-left: 1px solid #BDBDBD;
-			background-image: -webkit-gradient( 
-				linear, left top, left bottom,
-				color-stop(0, #D8D8D8),
-				color-stop(1, #FBFBFB)
-			);
-			height: 20px;
-			width: 22px;
-			display: inline-block;
-			text-indent: 27px;
-		}
-		input[type=checkbox]:checked:before {
-			content: 'YES';
-			text-indent: -25px;
-			margin-left: 33px;
-		}
-		input {
-			width: 100%;
-		}
-	</style>
+	<link rel="stylesheet" href="http://66.6.115.212/pm_packetlayer/app.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-	<form action="search.php" method="post" name="search">
+	<form action="http://66.6.115.212/pm_packetlayer/search.php" method="post" name="search">
 		<label>Search</label>
 		<input type="text" name="query">
 		<input type="submit" value="Search">
 	</form>
+	<button id="createNewSale">New Sale</button>
 	<ul id="results">
 	</ul>
 </body>

@@ -3,25 +3,6 @@
 	<title>Sales Call Form</title>	
 	<link rel="stylesheet" href="http://66.6.115.212/pm_packetlayer/app.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-		$("#search").ajax({
-			url: $("form").attr("action"),
-			method: $("form").attr("method"),
-			data: $("form").serialize(),
-			success: function(result) {
-				var responses = JSON.parse(result);
-				for (var i = 0; i < responses.length; ++i) {
-					$("#results").append("<li id=\"" + responses[i].ID + "\"><a href=\"sales.html?i=" + responses[i].ID + "\">" +
-						"Name: " + responses[i].Customer_name + "<br />" +
-						"Date: " + responses[i].Sales_Date + "<br />" +
-						"Salesperson: " + responses[i].Salesperson + "<br />" +
-						"Address: " + responses[i].Address + "<br />" +
-						"Phone: " + responses[i].Phone + "<br />" +
-					"</a></li>");
-				}
-			}
-		});
-	</script>
 </head>
 <body>
 	<form action="http://66.6.115.212/pm_packetlayer/search.php" method="post" name="search">
@@ -33,4 +14,27 @@
 	<ul id="results">
 		
 	</ul>
+	<script>
+		$(document).ready(function() {
+			$("#search").bind("click", function() {
+				$.ajax({
+					url: "https://cors-anywhere.herokuapp.com/" + $("form").attr("action"),
+					method: $("form").attr("method"),
+					data: $("form").serialize(),
+					success: function(result) {
+						var responses = JSON.parse(result);
+						for (var i = 0; i < responses.length; ++i) {
+							$("#results").append("<li id=\"" + responses[i].ID + "\"><a href=\"sales.html?i=" + responses[i].ID + "\">" +
+								"Name: " + responses[i].Customer_name + "<br />" +
+								"Date: " + responses[i].Sales_Date + "<br />" +
+								"Salesperson: " + responses[i].Salesperson + "<br />" +
+								"Address: " + responses[i].Address + "<br />" +
+								"Phone: " + responses[i].Phone + "<br />" +
+							"</a></li>");
+						}
+					}
+				});
+			});
+		});
+	</script>
 </body>

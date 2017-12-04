@@ -352,9 +352,90 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back <br></button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
-
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: ".$row["ID"] . "<br>";
+					echo "Survery_date: ".$row["Survery_date"] . "<br>";
+					echo "Survery_time: ".$row["Survery_time"] . "<br>";
+					echo "Survery_POC: ".$row["Survery_POC"] . "<br>";
+					echo "Surveyor_name: ".$row["Surveyor_name"] . "<br>";
+					echo "Dist_visibility: ".$row["Dist_visibility"] . "<br>";
+					echo "Dist_1: ".$row["Dist_1"] . "<br>";
+					echo "Dist_1_direction: ".$row["Dist_1_direction"] . "<br>";
+					echo "Dist_2: ".$row["Dist_2"] . "<br>";
+					echo "Dist_2_direction: ".$row["Dist_2_direction"] . "<br>";
+					echo "Dist_3: ".$row["Dist_3"] . "<br>";
+					echo "Dist_3_direction: ".$row["Dist_3_direction"] . "<br>";
+					echo "Skid: ".$row["Skid"] . "<br>";
+					echo "Other_comm_equip: ".$row["Other_comm_equip"] . "<br>";
+					echo "PRS: ".$row["PRS"] . "<br>";
+					echo "Roof_acess: ".$row["Roof_acess"] . "<br>";
+					echo "Building_penetration: ".$row["Building_penetration"] . "<br>";
+					echo "Cable_path: ".$row["Cable_path"] . "<br>";
+					echo "Demarc_location: ".$row["Demarc_location"] . "<br>";
+					echo "CPE_mount: ".$row["CPE_mount"] . "<br>";
+					echo "Single: ".$row["Single"] . "<br>";
+					echo "Roof: ".$row["Roof"] . "<br>";
+					echo "Num_of_installers: ".$row["Num_of_installers"] . "<br>";
+					echo "ToughCable: ".$row["ToughCable"] . "<br>";
+					echo "Notes   : ".$row["Notes"] . "<br>";
+					echo "Unistrut: ".$row["Unistrut"] . "<br>";
+					echo "J_bracket: ".$row["J_bracket"] . "<br>";
+					echo "Existing: ".$row["Existing"] . "<br>";
+					echo "Other: ".$row["Other"] . "<br>";
+					echo "Other_Isp: ".$row["Other_Isp"] . "<br>";
+					echo "Multifloor: ".$row["Multifloor"] . "<br>";
+					echo "Single_story: ".$row["Single_story"] . "<br>";
+					echo "Multitenant: ".$row["Multitenant"] . "<br>";
+					echo "Strip_mall: ".$row["Strip_mall"] . "<br>";
+					echo "Warehouse: ".$row["Warehouse"] . "<br>";
+					echo "Plant: ".$row["Plant"] . "<br>";
+					echo "Mounting: ".$row["Mounting"] . "<br>";
+					echo "Penetration: ".$row["Penetration"] . "<br>";
+					echo "Cable: ".$row["Cable"] . "<br>";
+					echo "Demarc: ".$row["Demarc"] . "<br>";
+					echo "CPE: ".$row["CPE"] . "<br>";
+					echo "Customer: ".$row["Customer"] . "<br>";
+					echo "Power: ".$row["Power"] . "<br>";
+					echo "Indoor: ".$row["Indoor"] . "<br>";
+					echo "Roof_skid: ".$row["Roof_skid"] . "<br>";
+					echo "Rubber: ".$row["Rubber"] . "<br>";
+					echo "Cinder: ".$row["Cinder"] . "<br>";
+					echo "Pipe: ".$row["Pipe"] . "<br>";
+					echo "Unistrut_: ".$row["Unistrut_"] . "<br>";
+					echo "U_clamps: ".$row["U_clamps"] . "<br>";
+					echo "Bolts: ".$row["Bolts"] . "<br>";
+					echo "Self: ".$row["Self"] . "<br>";
+					echo "Tapcons: ".$row["Tapcons"] . "<br>";
+					echo "Coax: ".$row["Coax"] . "<br>";
+					echo "Zip: ".$row["Zip"] . "<br>";
+					echo "Anchor: ".$row["Anchor"] . "<br>";
+					echo "Wood: ".$row["Wood"] . "<br>";
+					echo "Lag: ".$row["Lag"] . "<br>";
+					echo "Metal: ".$row["Metal"] . "<br>";
+					echo "Hammer: ".$row["Hammer"] . "<br>";
+					echo "Fish: ".$row["Fish"] . "<br>";
+					echo "Fishing: ".$row["Fishing"] . "<br>";
+					echo "Router: ".$row["Router"] . "<br>";
+					echo "Switch: ".$row["Switch"] . "<br>";
+					echo "Power_s: ".$row["Power_s"] . "<br>";
+					echo "Fiber_l: ".$row["Fiber_l"] . "<br>";
+					echo "Fiber_e: ".$row["Fiber_e"] . "<br>";
+					echo "Misc1: ".$row["Misc1"] . "<br>";
+					echo "Misc2: ".$row["Misc2"] . "<br>";
+					echo "Misc3: ".$row["Misc3"] . "<br>";
+					
+					
+					
+					
+					
+					
 				}
 			} else {
 				echo ("0 results");

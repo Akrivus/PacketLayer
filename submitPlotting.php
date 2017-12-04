@@ -10,13 +10,13 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	//all the columns 
 	$cl1 = "ID";
 	$cl2 = "Existing_infrastructure";
-	$cl3 ="Radio_survey";
-	$cl4 ="TX_radio";
-	$cl5 ="RX_radio";
-	$cl6 ="Existing_sector";
-	$cl7 ="Throughput";
-	$cl8 ="RSSI";
-	$cl9 ="Parts_list	";
+	$cl3 = "Radio_survey";
+	$cl4 = "TX_radio";
+	$cl5 = "RX_radio";
+	$cl6 = "Existing_sector";
+	$cl7 = "Throughput";
+	$cl8 = "RSSI";
+	$cl9 = "Parts_list	";
 	$cl10 ="Notes";
 	$cl11 ="Dist_install_labor";
 	$cl12 ="CPE_install_labor";
@@ -102,9 +102,36 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
-
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: " . $row["ID"] . "<br>";
+					echo "Existing_infrastructure: " . $row["Existing_infrastructure"] . "<br>";
+					echo "Radio_survey: " . $row["Radio_survey"] . "<br>";
+					echo "TX_radio: " . $row["TX_radio"] . "<br>";
+					echo "RX_radio: " . $row["RX_radio"] . "<br>";
+					echo "Existing_sector: " . $row["Existing_sector"] . "<br>";
+					echo "Throughput: " . $row["Throughput"] . "<br>";
+					echo "RSSI: " . $row["RSSI"] . "<br>";
+					echo "Parts_list: " . $row["Parts_list"] . "<br>";
+					echo "Notes: " . $row["Notes"] . "<br>";
+					echo "Dist_install_labor: " . $row["Dist_install_labor"] . "<br>";
+					echo "CPE_install_labor: " . $row["CPE_install_labor"] . "<br>";
+					echo "Salesperson: " . $row["Salesperson"] . "<br>";
+					echo "Customer_name: " . $row["Customer_name"] . "<br>";
+					echo "Date: " . $row["Date"] . "<br>";
+					echo "Address: " . $row["Address"] . "<br>";
+					echo "Bandwidth_req: " . $row["Bandwidth_req"] . "<br>";
+					echo "Distribution: " . $row["Distribution"] . "<br>";
+					echo "Onsite_survey: " . $row["Onsite_survey"] . "<br>";
+					echo "Visual_survey: " . $row["Visual_survey"] . "<br>";
+					echo "Num_people: " . $row["Num_people"] . "<br>";
+					
 				}
 			} else {
 				echo ("0 results");

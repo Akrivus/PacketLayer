@@ -81,8 +81,38 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: " . $row["ID"] . "<br>";
+					echo "Install_due: " . $row["Install_due"] . "<br>";
+					echo "Install_date: " . $row["Install_date"] . "<br>";
+					echo "Install_time: " . $row["Install_time"] . "<br>";
+					echo "Installers_needed: " . $row["Installers_needed"] . "<br>";
+					echo "IPs_needed: " . $row["IPs_needed"] . "<br>";
+					echo "Bandwidth: " . $row["Bandwidth"] . "<br>";
+					echo "Customer_pIP_range: " . $row["Customer_pIP_range"] . "<br>";
+					echo "VLAN: " . $row["VLAN"] . "<br>";
+					echo "pIP_Gateway: " . $row["pIP_Gateway"] . "<br>";
+					echo "pIP_subnet: " . $row["pIP_subnet"] . "<br>";
+					echo "CPE_prIP: " . $row["CPE_prIP"] . "<br>";
+					echo "Access_point_IP: " . $row["Access_point_IP"] . "<br>";
+					echo "AP_subnet: " . $row["AP_subnet"] . "<br>";
+					echo "AP_gateway: " . $row["AP_gateway"] . "<br>";
+					echo "Customer_technical_POC_name: " . $row["Customer_technical_POC_name"] . "<br>";
+					echo "Customer_technical_POC_phone: " . $row["Customer_technical_POC_phone"] . "<br>";
+					echo "Customer_technical_POC_email: " . $row["Customer_technical_POC_email"] . "<br>";
+					echo "Special: " . $row["Special"] . "<br>";
+					echo "Additional_instructions: " . $row["Additional_instructions"] . "<br>";
+					echo "Faculty_technical_POC_name: " . $row["Faculty_technical_POC_name"] . "<br>";
+					echo "Faculty_technical_POC_phone: " . $row["Faculty_technical_POC_phone"] . "<br>";
+					echo "Faculty_technical_POC_email: " . $row["Faculty_technical_POC_email"] . "<br>";
+					
 				}
 			} else {
 				echo ("0 results");

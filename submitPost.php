@@ -134,9 +134,36 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
-
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: " . $row["ID"] . "<br>";
+					echo "Customer_pIP_range: " . $row["Customer_pIP_range"] . "<br>";
+					echo "Default_gate: " . $row["Default_gate"] . "<br>";
+					echo "Subnet: " . $row["Subnet"] . "<br>";
+					echo "Cacti: " . $row["Cacti"] . "<br>";
+					echo "IPAM: " . $row["IPAM"] . "<br>";
+					echo "Bill: " . $row["Bill"] . "<br>";
+					echo "Bandwidth: " . $row["Bandwidth"] . "<br>";
+					echo "Payable: " . $row["Payable"] . "<br>";
+					echo "Contract_f: " . $row["Contract_f"] . "<br>";
+					echo "U_spreadsht: " . $row["U_spreadsht"] . "<br>";
+					echo "U_payable: " . $row["U_payable"] . "<br>";
+					echo "Four: " . $row["Four"] . "<br>";
+					echo "Email: " . $row["Email"] . "<br>";
+					echo "Ticket: " . $row["Ticket"] . "<br>";
+					echo "U_contact: " . $row["U_contact"] . "<br>";
+					echo "Map: " . $row["Map"] . "<br>";
+					echo "Survey: " . $row["Survey"] . "<br>";
+					echo "IP_info: " . $row["IP_info"] . "<br>";
+					echo "Linkedin: " . $row["Linkedin"] . "<br>";
+					echo "Commencement: " . $row["Commencement"] . "<br>";
+					
 				}
 			} else {
 				echo ("0 results");

@@ -96,8 +96,45 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: " .$row["ID"] . "<br>";
+					echo "POC_alt1_name: " .$row["POC_alt1_name"] . "<br>";
+					echo "POC_alt1_title: " .$row["POC_alt1_title"] . "<br>";
+					echo "POC_alt1_phone: " .$row["POC_alt1_phone"] . "<br>";
+					echo "POC_alt1_email: " .$row["POC_alt1_email"] . "<br>";
+					echo "POC_alt2_name: " .$row["POC_alt2_name"] . "<br>";
+					echo "POC_alt2_title: " .$row["POC_alt2_title"] . "<br>";
+					echo "POC_alt2_phone: " .$row["POC_alt2_phone"] . "<br>";
+					echo "POC_alt2_email: " .$row["POC_alt2_email"] . "<br>";
+					echo "POC_alt3_name: " .$row["POC_alt3_name"] . "<br>";
+					echo "POC_alt3_title: " .$row["POC_alt3_title"] . "<br>";
+					echo "POC_alt3_phone: " .$row["POC_alt3_phone"] . "<br>";
+					echo "POC_alt3_email: " .$row["POC_alt3_email"] . "<br>";
+					echo "POC_alt4_name: " .$row["POC_alt4_name"] . "<br>";
+					echo "POC_alt4_title: " .$row["POC_alt4_title"] . "<br>";
+					echo "POC_alt4_phone: " .$row["POC_alt4_phone"] . "<br>";
+					echo "POC_alt4_email: " .$row["POC_alt4_email"] . "<br>";
+					echo "Customer_notes: " .$row["Customer_notes"] . "<br>";
+					echo "Building_ownership: " .$row["Building_ownership"] . "<br>";
+					echo "Multitenant: " .$row["Multitenant"] . "<br>";
+					echo "Property_name: " .$row["Property_name"] . "<br>";
+					echo "Building_owners: " .$row["Building_owners"] . "<br>";
+					echo "Property_mng_co: " .$row["Property_mng_co"] . "<br>";
+					echo "POC1_Building_name: " .$row["POC1_Building_name"] . "<br>";
+					echo "POC1_Building_email: " .$row["POC1_Building_email"] . "<br>";
+					echo "POC1_Building_phone: " .$row["POC1_Building_phone"] . "<br>";
+					echo "Notes: " .$row["Notes"] . "<br>";
+					echo "POC2_Building_email: " .$row["POC2_Building_email"] . "<br>";
+					echo "POC2_Building_name: " .$row["POC2_Building_name"] . "<br>";
+					echo "POC2_Building_phone: " .$row["POC2_Building_phone"] . "<br>";
+					
 				}
 			} else {
 				echo ("0 results");

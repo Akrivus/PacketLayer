@@ -178,8 +178,64 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	if ($response[1]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[1]->fetch_assoc()) {
-					echo json_encode($row);
+					//echo json_encode($row);
+					echo "<br>";
+					echo "ID: " .$row["ID"] . "<br>" ;
+					echo "Dist_date: " .$row["Dist_date"] . "<br>" ;
+					echo "Dist_name: " .$row["Dist_name"] . "<br>" ;
+					echo "Technician1_name: " .$row["Technician1_name"] . "<br>" ;
+					echo "Technician1_start: " .$row["Technician1_start"] . "<br>" ;
+					echo "Technician1_stop: " .$row["Technician1_stop"] . "<br>" ;
+					echo "Technician1_hours: " .$row["Technician1_hours"] . "<br>" ;
+					echo "Technician2_name: " .$row["Technician2_name"] . "<br>" ;
+					echo "Technician2_start: " .$row["Technician2_start"] . "<br>" ;
+					echo "Technician2_stop: " .$row["Technician2_stop"] . "<br>" ;
+					echo "Technician2_hours: " .$row["Technician2_hours"] . "<br>" ;
+					echo "Technician3_name: " .$row["Technician3_name"] . "<br>" ;
+					echo "Technician3_start: " .$row["Technician3_start"] . "<br>" ;
+					echo "Technician3_stop: " .$row["Technician3_stop"] . "<br>" ;
+					echo "Technician3_hours: " .$row["Technician3_hours"] . "<br>" ;
+					echo "Technician4_name: " .$row["Technician4_name"] . "<br>" ;
+					echo "Technician4_start: " .$row["Technician4_start"] . "<br>" ;
+					echo "Technician4_stop: " .$row["Technician4_stop"] . "<br>" ;
+					echo "Technician4_hours: " .$row["Technician4_hours"] . "<br>" ;
+					echo "Technician5_name: " .$row["Technician5_name"] . "<br>" ;
+					echo "Technician5_start: " .$row["Technician5_start"] . "<br>" ;
+					echo "Technician5_stop: " .$row["Technician5_stop"] . "<br>" ;
+					echo "Technician5_hours: " .$row["Technician5_hours"] . "<br>" ;
+					echo "Technician6_name: " .$row["Technician6_name"] . "<br>" ;
+					echo "Technician6_start: " .$row["Technician6_start"] . "<br>" ;
+					echo "Technician6_stop: " .$row["Technician6_stop"] . "<br>" ;
+					echo "Technician6_hours: " .$row["Technician6_hours"] . "<br>" ;
+					echo "Technician7_name: " .$row["Technician7_name"] . "<br>" ;
+					echo "Technician7_start: " .$row["Technician7_start"] . "<br>" ;
+					echo "Technician7_stop: " .$row["Technician7_stop"] . "<br>" ;
+					echo "Technician7_hours: " .$row["Technician7_hours"] . "<br>" ;
+					echo "Technician8_name: " .$row["Technician8_name"] . "<br>" ;
+					echo "Technician8_start: " .$row["Technician8_start"] . "<br>" ;
+					echo "Technician8_stop: " .$row["Technician8_stop"] . "<br>" ;
+					echo "Technician8_hours: " .$row["Technician8_hours"] . "<br>" ;
+					echo "System_log: " .$row["System_log"] . "<br>" ;
+					echo "NTP: " .$row["NTP"] . "<br>" ;
+					echo "SSH: " .$row["SSH"] . "<br>" ;
+					echo "SNMP: " .$row["SNMP"] . "<br>" ;
+					echo "GPS: " .$row["GPS"] . "<br>" ;
+					echo "Timezone: " .$row["Timezone"] . "<br>" ;
+					echo "User_pass: " .$row["User_pass"] . "<br>" ;
+					echo "Host: " .$row["Host"] . "<br>" ;
+					echo "Scrn_sht: " .$row["Scrn_sht"] . "<br>" ;
+					echo "Rate: " .$row["Rate"] . "<br>" ;
+					echo "Labeling: " .$row["Labeling"] . "<br>" ;
+					echo "Pics: " .$row["Pics"] . "<br>" ;
+					echo "Max_capacity_circ: " .$row["Max_capacity_circ"] . "<br>" ;
+					echo "Notes: " .$row["Notes"] . "<br>" ;					
+					
 				}
 			} else {
 				echo ("0 results");

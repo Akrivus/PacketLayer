@@ -226,8 +226,58 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 	}
 	else if ($response[2]->num_rows > 0) {
 				// output data of each row
+				echo '
+				<html><head></head><body>
+				<button onclick="history.go(-1);">Back </button>
+				</body></html>
+				';
 				while($row = $response[2]->fetch_assoc()) {
-					echo json_encode($row);
+					//echo json_encode($row);
+					echo "<br>";
+					echo "Salesperson: " . $row["Salesperson"] . "<br>"; 
+					echo "Sales_Date: " .$row["Sales_Date"] . "<br>";
+					echo "Customer_name: " .$row["Customer_name"] . "<br>";
+					echo "Address: " .$row["Address"] . "<br>";
+					echo "Phone: " .$row["Phone"] . "<br>";
+					echo "POC_name: " .$row["POC_name"] . "<br>";
+					echo "POC_title: " .$row["POC_title"] . "<br>";
+					echo "POC_phone: " .$row["POC_phone"] . "<br>";
+					echo "POC_email: " .$row["POC_email"] . "<br>";
+					echo "Cold_call: " .$row["Cold_call"] . "<br>";
+					echo "POC_reseller_name: " .$row["POC_reseller_name"] . "<br>";
+					echo "POC_reseller_org: " .$row["POC_reseller_org"] . "<br>";
+					echo "POC_reseller_phone: " .$row["POC_reseller_phone"] . "<br>";
+					echo "POC_reseller_email: " .$row["POC_reseller_email"] . "<br>";
+					echo "POC_reseller_fee: " .$row["POC_reseller_fee"] . "<br>";
+					echo "Internet: " .$row["Internet"] . "<br>";
+					echo "Bandwidth_req: " .$row["Bandwidth_req"] . "<br>";
+					echo "IP_ammount: " .$row["IP_ammount"] . "<br>";
+					echo "Bandwidth_current: " .$row["Bandwidth_current"] . "<br>";
+					echo "Current_provider: " .$row["Current_provider"] . "<br>";
+					echo "Current_monthly_charge: " .$row["Current_monthly_charge"] . "<br>";
+					echo "Current_technology: " .$row["Current_technology"] . "<br>";
+					echo "TowerCoverage: " .$row["TowerCoverage"] . "<br>";
+					echo "Notes: " .$row["Notes"] . "<br>";
+					echo "Reseller: " .$row["Reseller"] . "<br>";
+					echo "Repeat_: " .$row["Repeat_"] . "<br>";
+					echo "Google: " .$row["Google"] . "<br>";
+					echo "BB_now: " .$row["BB_now"] . "<br>";
+					echo "Walkin: " .$row["Walkin"] . "<br>";
+					echo "Unk: " .$row["Unk"] . "<br>";
+					echo "Referral: " .$row["Referral"] . "<br>";
+					echo "Public_ips: " .$row["Public_ips"] . "<br>";
+					echo "Telephone: " .$row["Telephone"] . "<br>";
+					echo "Hosting: " .$row["Hosting"] . "<br>";
+					echo "Web_dev: " .$row["Web_dev"] . "<br>";
+					echo "Domain_name_svcs: " .$row["Domain_name_svcs"] . "<br>";
+					echo "Managed_services: " .$row["Managed_services"] . "<br>";
+					echo "Consulting: " .$row["Consulting"] . "<br>";
+					echo "Backup_internet: " .$row["Backup_internet"] . "<br>";
+					echo "Serviceability: " .$row["Serviceability"] . "<br>";
+					echo "Quote: " .$row["Quote"] . "<br>";
+					echo "Contract_ex: " .$row["Contract_ex"] . "<br>";
+					echo "Setup_fee_receipt: " .$row["Setup_fee_receipt"] . "<br>";
+					
 				}
 			} else {
 				echo ("0 results");

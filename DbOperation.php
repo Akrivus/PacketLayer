@@ -169,8 +169,59 @@ class DbOperation
 		return $result;
 	}
 	
+	public function getSales($ID)
+	{
+		$sql = "SELECT * FROM Sales where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getCPE($ID)
+	{
+		$sql = "SELECT * FROM CPE where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getCustomer($ID)
+	{
+		$sql = "SELECT * FROM Customer where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getDistribution($ID)
+	{
+		$sql = "SELECT * FROM Distribution where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getInstallation($ID)
+	{
+		$sql = "SELECT * FROM Installation where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getOnsite($ID)
+	{
+		$sql = "SELECT * FROM Onsite where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getPlotting($ID)
+	{
+		$sql = "SELECT * FROM Plotting where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	public function getPost($ID)
+	{
+		$sql = "SELECT * FROM Post where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
+	}
+	
 	public function psub($tb, $ID)
 	{
-		
+		$sql = "SELECT * FROM Sales where ID = ".$ID . " LIMIT 1";
+		$result = $this->conn->query($sql);
+		return ['yes', $result ];
 	}
 }
